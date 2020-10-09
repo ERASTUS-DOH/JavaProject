@@ -67,7 +67,7 @@ public class Students implements Nameable {
 
     public String getName()
     {
-        return null;
+        return this.name;
     }
 
 
