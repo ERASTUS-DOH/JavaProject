@@ -8,7 +8,7 @@ class StudentsTest {
 
     @Test
     void getAverageGrade() {
-        Students student = new Students("nana","ps/itc/16/0031",12);
+        Students student = new Students("nana");
         student.setgrade(98.0);
         student.setgrade(98.0);
         student.setgrade(98.0);

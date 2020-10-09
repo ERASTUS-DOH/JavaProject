@@ -4,37 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Students {
-    String name;
+
     String id;
-    int age;
     double averageGrade;
     List<Double> grades = new ArrayList<>();
 
 
 
-    public Students(String _name, String _id, int _age, List<Double> _Grades) {
-        this.name = _name;
-        this.id = _id;
-        this.age = _age;
+    public Students( String _id, List<Double> _Grades) {
+       this.id = _id;
         this.grades = _Grades;
 
     }
 
-    public Students(String _name, String _id, int _age) {
-        this.name = _name;
+    public Students(String _id){
         this.id = _id;
-        this.age = _age;
-    }
-
-
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getId() {
@@ -45,13 +29,6 @@ public class Students {
         this.id = id;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public double getAverageGrade() {
         setAverageGrade();
@@ -74,9 +51,8 @@ public class Students {
     @Override
     public String toString() {
         return "Students{" +
-                "name='" + name + '\'' +
+
                 ", id='" + id + '\'' +
-                ", age=" + age +
                 ", averageGrade=" + averageGrade +
                 '}';
     }
