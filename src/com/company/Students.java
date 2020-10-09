@@ -24,11 +24,6 @@ public class Students implements Nameable {
         this.id = _id;
     }
 
-    public String getName()
-    {
-
-    }
-
     public String getId() {
         return id;
     }
@@ -65,10 +60,15 @@ public class Students implements Nameable {
     @Override
     public String toString() {
         return "Students{" +
-                "name='" + name + '\'' +
                 ", id='" + id + '\'' +
-                ", age=" + age +
                 ", averageGrade=" + averageGrade +
                 '}';
     }
+
+    public String getName()
+    {
+        return null;
+    }
+
+
 }

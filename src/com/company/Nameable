@@ -1,6 +1,6 @@
 package com.company
 
-interface Nameable<E>
+public interface Nameable
 {
 //    return student name
     public String getName();
