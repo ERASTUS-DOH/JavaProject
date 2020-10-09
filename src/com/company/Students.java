@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Students {
+public class Students implements Nameable {
     String name;
     String id;
     int age;
@@ -12,29 +12,21 @@ public class Students {
 
 
 
-    public Students(String _name, String _id, int _age, List<Double> _Grades) {
-        this.name = _name;
+    public Students( String _id, List<Double> _Grades)
+    {
         this.id = _id;
-        this.age = _age;
         this.grades = _Grades;
 
     }
 
-    public Students(String _name, String _id, int _age) {
-        this.name = _name;
+    public Students( String _id)
+    {
         this.id = _id;
-        this.age = _age;
     }
 
+    public String getName()
+    {
 
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getId() {
@@ -69,7 +61,6 @@ public class Students {
     public void setgrade(Double grade){
         grades.add(grade);
     }
-
 
     @Override
     public String toString() {
